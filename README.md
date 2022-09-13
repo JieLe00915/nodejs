@@ -10,11 +10,6 @@
 输入node -v查看当前node 的版本
 
 找到Node安装的路径，在当前路径下新建两个文件夹
-（node_global、node_cache可以去将所有的全局安装文件和缓存文件统一管理）
-
-  ![https://note.youdao.com/yws/public/resource/b8cdc8d330e42e46954760136305c819/xmlnote/E3BFABF4E5E64EC68CF5B3BBC7CA04AD/15980](https://note.youdao.com/yws/public/resource/b8cdc8d330e42e46954760136305c819/xmlnote/E3BFABF4E5E64EC68CF5B3BBC7CA04AD/15980) ![img](https://note.youdao.com/yws/public/resource/b8cdc8d330e42e46954760136305c819/xmlnote/0CD3787A514B4B4FBB598E32393D7F31/15986) 
-
- ![img](https://note.youdao.com/yws/public/resource/b8cdc8d330e42e46954760136305c819/xmlnote/81B9405E06ED4132BF020ED471EE7657/15982) 
 
 配置基本信息(注意：需要更改为自己文件夹的路径)
 语法：
@@ -28,7 +23,7 @@ npm config set cache  "文件路径" 更改缓存的目录
 
 配置环境变量
 
- ![https://note.youdao.com/yws/public/resource/b8cdc8d330e42e46954760136305c819/xmlnote/77ED886F88184B59B6D55FCC2FDE0EF6/15988](https://note.youdao.com/yws/public/resource/b8cdc8d330e42e46954760136305c819/xmlnote/77ED886F88184B59B6D55FCC2FDE0EF6/15988) 计算机右键->属性->高级系统设置->环境变量
+计算机右键->属性->高级系统设置->环境变量
 
 若报以下错误，则代表环境变量不能使用
 
@@ -44,6 +39,7 @@ npm uninstall 代表卸载
 --save-dev 安装到本地文件夹  -D
 
 安装模块语法：
+
 npm install -g 安装的模块 或者npm install 安装的模块 -g
 
 npm i -g 安装的模块  或者  npm i 安装的模块 -g

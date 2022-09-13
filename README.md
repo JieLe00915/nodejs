@@ -44,8 +44,11 @@ npm uninstall 代表卸载
 --save-dev 安装到本地文件夹  -D
 
 安装模块语法：
-#npm install -g 安装的模块 或者npm install 安装的模块 -g
-#npm i -g 安装的模块  或者  npm i 安装的模块 -g
-#卸载模块语法 npm uninstall -g 
-#卸载的模块 或者 npm uninstall  卸载的模块 -g
+npm install -g 安装的模块 或者npm install 安装的模块 -g
+
+npm i -g 安装的模块  或者  npm i 安装的模块 -g
+
+卸载模块语法 npm uninstall -g 
+
+卸载的模块 或者 npm uninstall  卸载的模块 -g
 

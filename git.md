@@ -74,7 +74,7 @@ revert[回滚]: 回滚到上一个版本
 
 3.nvm 管理node 操作
 brew install nvm
- vim .zshrc  配置环境变量
+vim .zshrc  配置环境变量
 
 
 export NVM_DIR="$HOME/.nvm"

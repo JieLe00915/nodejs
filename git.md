@@ -90,3 +90,42 @@ nvm ls remote
 nvm install 14.20
 nvm  alias default  14.20
 nvm ls
+
+
+1. git配置命令
+查询配置信息
+1. 列出当前配置：git config --list;
+2. 列出repository配置：git config --local --list;
+3. 列出全局配置：git config --global --list;
+4. 列出系统配置：git config --system --list;
+第一次使用git，配置用户信息
+1. 配置用户名：git config --global user.name "your name";
+2. 配置用户邮箱：git config --global user.email "youremail@github.com";
+其他配置
+1. 配置解决冲突时使用哪种差异分析工具，比如要使用vimdiff：git config --global merge.tool vimdiff;
+2. 配置git命令输出为彩色的：git config --global color.ui auto;
+3. 配置git使用的文本编辑器：git config --global core.editor vi;
+2. 工作区上的操作命令
+新建仓库
+1. 将工作区中的项目文件使用git进行管理，即创建一个新的本地仓库：git init；
+2. 从远程git仓库复制项目：git clone <url>，如：git clone git://github.com/wasd/example.git;克隆项目时如果想定义新的项目名，可以在clone命令后指定新的项目名：git clone git://github.com/wasd/example.git mygit；
+提交
+1. 提交工作区所有文件到暂存区：git add .
+2. 提交工作区中指定文件到暂存区：git add <file1> <file2> ...;
+3. 提交工作区中某个文件夹中所有文件到暂存区：git add [dir];
+撤销
+1. 删除工作区文件，并且也从暂存区删除对应文件的记录：git rm <file1> <file2>;
+2. 从暂存区中删除文件，但是工作区依然还有该文件:git rm --cached <file>;
+3. 取消暂存区已经暂存的文件：git reset HEAD <file>...;
+4. 撤销上一次对文件的操作：git checkout --<file>。要确定上一次对文件的修改不再需要，如果想保留上一次的修改以备以后继续工作，可以使用stashing和分支来处理；
+
+3. 暂存区上的操作命令
+提交文件到版本库
+1. 将暂存区中的文件提交到本地仓库中，即打上新版本：git commit -m "commit_info";
+2. 将所有已经使用git管理过的文件暂存后一并提交，跳过add到暂存区的过程：git commit -a -m "commit_info";
+3. 提交文件时，发现漏掉几个文件，或者注释写错了，可以撤销上一次提交：git commit --amend;
+查看信息
+1. 比较暂存区与上一版本的差异：git diff --cached;
+2. 指定文件在暂存区和本地仓库的不同：git diff <file-name> --cached;
+3. 查看提交历史：git log；参数-p展开每次提交的内容差异，用-2显示最近的两次更新，如git log -p -2;
+
